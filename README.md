@@ -1,6 +1,6 @@
 # 👋 YZ_Ljc_
 
-<p align="right">
+<p align="center">
   <img src="./img/self.png" alt="我的头像" width="120"/>
 </p>
 
@@ -18,7 +18,7 @@
 - 正在制作Hypixel Ban Test服务器
 
 ### 📡 实时状态  
-<p align="right">
+<p align="center">
   <img src="https://api.mcstatus.io/v2/widget/java/mc.yzljc.top?dark=true&rounded=true" alt="服务器状态" width="300"/>
 </p>
 
