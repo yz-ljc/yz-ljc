@@ -2,7 +2,6 @@
 
 <p align="right">
   <img src="./img/self.png" alt="我的头像" width="120"/>
-  <img src="https://api.mcstatus.io/v2/widget/java/mc.yzljc.top?dark=true&rounded=true" alt="服务器状态" width="300"/>
 </p>
 
 ## 🧑‍💻 关于我
