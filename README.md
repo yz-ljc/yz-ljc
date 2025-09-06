@@ -5,6 +5,7 @@
 - 🛠️ 自 **2020-11-14** 起开始运营 Minecraft 服务器  
 - 📚 目前是 **软件工程** 大一学生，正在学习 **Minecraft 插件开发**  
 - 🌱 兴趣方向：Java 开发、游戏服务器优化  
+- 👨‍💻 **团队:** [YzLjc-Team](https://github.com/YzLjc-Team/)
 
 ---
 
