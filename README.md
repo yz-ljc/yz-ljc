@@ -1,9 +1,5 @@
 # 👋 YZ_Ljc_
 
-<p align="center">
-  <img src="./img/self.png" alt="我的头像" width="120"/>
-</p>
-
 ## 🧑‍💻 关于我
 - 🎮 热爱 **Minecraft** 游戏与多人服务器开发  
 - 🛠️ 自 **2020-11-14** 起开始运营 Minecraft 服务器  
