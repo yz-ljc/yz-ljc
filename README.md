@@ -24,7 +24,7 @@
 
 <!-- GitHub 统计信息 -->
 <p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=yz-ljc&show_icons=true&locale=en&theme=tokyonight&rank_icon=github" alt="yz-ljc" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=yz-ljc&show_icons=true&locale=en&theme=tokyonight&show_rank=true" alt="yz-ljc's GitHub Stats" />
 </p>
 
 <!-- 常用语言 -->
