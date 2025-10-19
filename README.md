@@ -1,13 +1,14 @@
 <!-- 标题和欢迎语 -->
-<h1 align="center">Hi 👋, I'm YZ_Ljc_</h1>
+<h1 align="center">Hi 👋, I'm yz-ljc</h1>
 <h3 align="center">A passionate developer from China</h3>
 
 <!-- 联系方式 -->
 <p align="left">
 <h3>Reach me on:</h3>
-<a href="mailto:你的邮箱地址" target="blank"><img align="center" src="https://simpleicons.org/icons/gmail.svg" alt="你的邮箱" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/你的领英" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="你的领英" height="30" width="40" /></a>
-<a href="https://twitter.com/你的推特" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="你的推特" height="30" width="40" /></a>
+<a href="mailto:contact@yzljc.top" target="_blank"><img src="https://img.shields.io/badge/Email-contact@yzljc.top-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://space.bilibili.com/592616376" target="_blank"><img src="https://img.shields.io/badge/Bilibili-B%E7%AB%99-fb7299?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili"></a>
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=...&jump_from=webapi" target="_blank"><img src="https://img.shields.io/badge/QQ-3199590352-blue?style=for-the-badge&logo=tencent-qq&logoColor=white" alt="QQ"></a>
+<a href="https://jq.qq.com/?_wv=1027&k=... " target="_blank"><img src="https://img.shields.io/badge/QQ%E4%BA%A4%E6%B5%81%E7%BE%A4-818804507-blue?style=for-the-badge&logo=tencent-qq&logoColor=white" alt="QQ Group"></a>
 </p>
 
 <!-- 技术栈 -->
@@ -15,11 +16,10 @@
 <h3>Technology Stack:</h3>
 <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="c"/> </a>
 <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="cplusplus"/> </a>
-<a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="java"/> </a>
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python"/> </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript"/> </a>
+<a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="java"/> </a>
+<a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="php"/> </a>
+<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql"/> </a>
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/> </a>
-<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/> </a>
 </p>
 
 <!-- GitHub 统计信息 -->
