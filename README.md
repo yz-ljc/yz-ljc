@@ -23,11 +23,6 @@
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/> </a>
 </p>
 
-<!-- GitHub 活跃统计信息 -->
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=yz-ljc&theme=tokyonight&hide_border=true" alt="yz-ljc's Streak Stats" />
-</p>
-
 <!-- 贡献图 -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=yz-ljc&theme=tokyo-night" alt="activity graph">
