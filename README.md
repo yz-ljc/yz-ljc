@@ -23,14 +23,24 @@
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/> </a>
 </p>
 
-<!-- GitHub 统计信息 -->
+<!-- GitHub 奖杯 -->
 <p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=yz-ljc&show_icons=true&locale=en&theme=tokyonight&show_rank=true" alt="yz-ljc's GitHub Stats" />
+  <img src="https://github-profile-trophy.vercel.app/?username=yz-ljc&theme=darkhub&row=1&column=8" alt="yz-ljc github trophy" />
 </p>
 
-<!-- 常用语言 -->
+<!-- GitHub Streaks -->
 <p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=yz-ljc&layout=compact&locale=en&theme=tokyonight" alt="yz-ljc" />
+  <img src="https://streak-stats.demolab.com/?user=yz-ljc&theme=tokyonight&hide_border=true" alt="yz-ljc streak stats" />
+</p>
+
+<!-- 活动趋势图 -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yz-ljc&theme=tokyo-night&hide_border=true" alt="yz-ljc activity graph" />
+</p>
+
+<!-- 常用语言图标 -->
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,java,cpp,js,go" />
 </p>
 
 <!-- 贡献图 -->
