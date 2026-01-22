@@ -2,29 +2,8 @@ package top.yzljc.qqbot.config;
 
 import java.util.List;
 
-public interface Settings {
-
-    int getListenPort();
-
-    String getMysqlHost();
-
-    int getMysqlPort();
-
-    String getMysqlDatabase();
-
-    String getMysqlUsername();
-
-    String getMysqlPassword();
-
-    long getManosabaGroupId();
-
-    boolean isDebugMode();
-
-    List<Long> getMessageSpyGroups();
-
     String getHttpUrl();
 
-    String getMysqlHost();
 
     int getMysqlPort();
 
@@ -35,62 +14,6 @@ public interface Settings {
     String getMysqlPassword();
 
     long getManosabaGroupId();
-
-    boolean isDebugMode();
-
-    List<Long> getMessageSpyGroups();
-
-    String getHttpUrl();
-
-    String getMysqlHost();
-
-    int getMysqlPort();
-
-    String getMysqlDatabase();
-
-    String getMysqlUsername();
-
-    String getMysqlPassword();
-
-    long getManosabaGroupId();
-
-    boolean isDebugMode();
-
-    List<Long> getMessageSpyGroups();
-
-    String getHttpUrl();
-
-    String getMysqlHost();
-
-    int getMysqlPort();
-
-    String getMysqlDatabase();
-
-    String getMysqlUsername();
-
-    String getMysqlPassword();
-
-    long getManosabaGroupId();
-
-    boolean isDebugMode();
-
-    List<Long> getMessageSpyGroups();
-
-    String getHttpUrl();
-
-    String getMysqlHost();
-
-    int getMysqlPort();
-
-    String getMysqlDatabase();
-
-    String getMysqlUsername();
-
-    String getMysqlPassword();
-
-    long getManosabaGroupId();
-
-    boolean isDebugMode();
 
     List<Long> getMessageSpyGroups();
 
