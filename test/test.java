@@ -4,27 +4,6 @@ import java.util.List;
 
     String getHttpUrl();
 
-
-    int getMysqlPort();
-
-    String getMysqlDatabase();
-
-    String getMysqlUsername();
-
-    String getMysqlPassword();
-
-    long getManosabaGroupId();
-
-    List<Long> getMessageSpyGroups();
-
-    String getHttpUrl();
-
-    String getMysqlHost();
-
-    int getMysqlPort();
-
-    String getMysqlDatabase();
-
     String getMysqlUsername();
 
     String getMysqlPassword();
