@@ -6,27 +6,6 @@ public interface Settings {
 
     int getListenPort();
 
-    int getQqBotPort();
-
-    String getBilibiliCookie();
-    List<Long> getAdminUids();
-
-    long getBotUid();
-
-    long getDebugGroupId();
-
-    List<Long> getMessageSpyGroups();
-
-    String getHttpUrl();
-
-    String getMysqlHost();
-
-    int getMysqlPort();
-
-    List<Long> getMessageSpyGroups();
-
-    String getHttpUrl();
-
     String getMysqlHost();
 
     int getMysqlPort();
