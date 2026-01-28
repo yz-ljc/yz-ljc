@@ -23,6 +23,6 @@
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/> </a>
 </p>
 
-[![Top Langs](https://github-readme-stats-shenao1100s-projects.vercel.app/api/top-langs/?username=shenao1100&layout=compact&hide=javascript,html,scss,css)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats-shenao1100s-projects.vercel.app/api/top-langs/?username=yz-ljc&layout=compact&hide=javascript,html,scss,css)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Anurag's GitHub stats](https://github-readme-stats-shenao1100s-projects.vercel.app/api?username=shenao1100)](https://github.com/anuraghazra/github-readme-stats)>
+[![Anurag's GitHub stats](https://github-readme-stats-shenao1100s-projects.vercel.app/api?username=yz-ljc)](https://github.com/anuraghazra/github-readme-stats)>
