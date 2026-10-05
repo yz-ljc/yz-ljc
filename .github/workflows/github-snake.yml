@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish images to snake-output
+      - name: Publish animations and commit count to snake-output
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           script: |
@@ -56,6 +56,35 @@ jobs:
               }
               const blob = await github.rest.git.createBlob({ ...repo, content, encoding: 'utf-8' });
               tree.push({ path, mode: '100644', type: 'blob', sha: blob.data.sha });
+            }
+            try {
+              const data = await github.graphql(`
+                query {
+                  user(login: "yz-ljc") {
+                    contributionsCollection {
+                      startedAt
+                      endedAt
+                      totalCommitContributions
+                    }
+                  }
+                }
+              `);
+              const collection = data.user?.contributionsCollection;
+              if (!Number.isSafeInteger(collection?.totalCommitContributions) || collection.totalCommitContributions < 0) {
+                throw new Error('Invalid commit contribution count');
+              }
+              const stats = {
+                login: 'yz-ljc',
+                totalCommits: collection.totalCommitContributions,
+                from: collection.startedAt,
+                to: collection.endedAt,
+              };
+              const content = JSON.stringify(stats, null, 2) + '\n';
+              const blob = await github.rest.git.createBlob({ ...repo, content, encoding: 'utf-8' });
+              tree.push({ path: 'github-snake-stats.json', mode: '100644', type: 'blob', sha: blob.data.sha });
+            } catch (error) {
+              // Keep the previous statistics if GitHub temporarily rejects the query.
+              core.warning(`Commit statistics unavailable: ${error.message}`);
             }
             const result = await github.rest.git.createTree({
               ...repo,
