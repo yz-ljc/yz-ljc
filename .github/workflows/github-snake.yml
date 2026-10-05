@@ -1,0 +1,78 @@
+name: Update GitHub snake
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/github-snake.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate light and dark animations
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: yz-ljc
+          outputs: |
+            dist/github-snake-light.svg?color_snake=#bc7fa4&color_dots=#ece8f0,#d4c8e4,#b6a0d0,#927ab5,#725a94
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#e5bad1&color_dots=#2b2933,#4f435f,#77618f,#a18ab9,#cdb4e1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish images to snake-output
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        with:
+          script: |
+            const fs = require('node:fs/promises');
+            const repo = context.repo;
+            const ref = 'heads/snake-output';
+            let previous;
+            try {
+              const result = await github.rest.git.getRef({ ...repo, ref });
+              previous = (await github.rest.git.getCommit({ ...repo, commit_sha: result.data.object.sha })).data;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+
+            const tree = [];
+            for (const theme of ['light', 'dark']) {
+              const path = `github-snake-${theme}.svg`;
+              const content = await fs.readFile(`dist/${path}`, 'utf8');
+              if (!content.includes('<svg') || !content.includes('</svg>')) {
+                throw new Error(`Invalid SVG: ${path}`);
+              }
+              const blob = await github.rest.git.createBlob({ ...repo, content, encoding: 'utf-8' });
+              tree.push({ path, mode: '100644', type: 'blob', sha: blob.data.sha });
+            }
+            const result = await github.rest.git.createTree({
+              ...repo,
+              ...(previous ? { base_tree: previous.tree.sha } : {}),
+              tree,
+            });
+            if (previous?.tree.sha === result.data.sha) {
+              core.info('Contribution animation is already up to date.');
+              return;
+            }
+            const commit = await github.rest.git.createCommit({
+              ...repo,
+              message: 'chore: refresh GitHub contribution snake',
+              tree: result.data.sha,
+              parents: previous ? [previous.sha] : [],
+            });
+            if (previous) {
+              await github.rest.git.updateRef({ ...repo, ref, sha: commit.data.sha, force: false });
+            } else {
+              await github.rest.git.createRef({ ...repo, ref: `refs/${ref}`, sha: commit.data.sha });
+            }
