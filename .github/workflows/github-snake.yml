@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish animations and commit count to snake-output
+      - name: Publish animations and contribution count to snake-output
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           script: |
@@ -64,18 +64,18 @@ jobs:
                     contributionsCollection {
                       startedAt
                       endedAt
-                      totalCommitContributions
+                      contributionCalendar { totalContributions }
                     }
                   }
                 }
               `);
               const collection = data.user?.contributionsCollection;
-              if (!Number.isSafeInteger(collection?.totalCommitContributions) || collection.totalCommitContributions < 0) {
-                throw new Error('Invalid commit contribution count');
+              if (!Number.isSafeInteger(collection?.contributionCalendar?.totalContributions) || collection.contributionCalendar.totalContributions < 0) {
+                throw new Error('Invalid contribution count');
               }
               const stats = {
                 login: 'yz-ljc',
-                totalCommits: collection.totalCommitContributions,
+                totalContributions: collection.contributionCalendar.totalContributions,
                 from: collection.startedAt,
                 to: collection.endedAt,
               };
@@ -84,7 +84,7 @@ jobs:
               tree.push({ path: 'github-snake-stats.json', mode: '100644', type: 'blob', sha: blob.data.sha });
             } catch (error) {
               // Keep the previous statistics if GitHub temporarily rejects the query.
-              core.warning(`Commit statistics unavailable: ${error.message}`);
+              core.warning(`Contribution statistics unavailable: ${error.message}`);
             }
             const result = await github.rest.git.createTree({
               ...repo,
